@@ -42,7 +42,7 @@ frontend phenomenal_front
         default_backend phenomenal_back
 
 frontend phenomenal_front_secured
-        bind *:443 ssl crt /etc/haproxy/certs/www.chiagoziem.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.dphenomenal.tech.pem
         http-request redirect scheme https unless { ssl_fc }
         default_backend eke_back
 
